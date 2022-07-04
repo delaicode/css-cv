@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* * { обнуление всех стилей =>
+    padding: 0;
+    margin: 0;
+} */
+
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: forestgreen;
+}
+
+a:visited {
+    color: gray;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info p {
+    color: #86898f;
+    margin: 0;
+    /* letter-spacing: 0.5px; */
+    /* word-spacing: 21px; */
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+
+/* мы задали значение max-width для того, чтобы сайт адаптировался */
+
+/* .social {
+    background: yellowgreen;
+    padding: 15px; 
+    /* паддинги называются внутреннимии, так как отсуп идет именно от контента */
+/* border: 5px solid red;
+    margin: 14px; */
+/* марджины это отступы от остального контента */
+/* } */
+/* значения CSS взяты из фиксированных названий на color mdn */
+
+/*     .box-model > div {
+    float: left;
+    background: #0f141e;
+    height: 200px;
+    border: 4px solid red;
+    width: 25%; 
+    box-sizing: border-box;
+    } */
+
+/* значение больше перед box model означает, что применяться правила будут только к дочерним элментам */
+/* box-sizing меняет поведение, когда элемент не помещается на одной строке из-за каких либо других свойств */
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+/* лучше использовать для отступов снизу margin-bottom, так как это стабильно изменится */
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #86898f;
+}
+
+/* используется дочерний элемент для стилизации колонки */
+
+/* .table tr:nth-child(odd) {
+    background: red;
+} */
+/* такой строчкой можно изменить каждый второй элемент строки */
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* в свойство list-style можно добавлять url с собственными изображениями */
+
+.link-list li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+/* свойство inherit позволяет наследовать текст в инпутах */
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+margin-right: 0;
+}
+
+.btn {
+    background-color: #111;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+/* свойство курсор поинтер позволяет менять курсор при наведении на кнопку */
+
+.btn:hover {
+    opacity: 0.9;
+}
+/* opacity подсвечивает кнопку */
+
+
+/* здесь инструкция позишенов по созданию баннера */
+
+/* .position {
+    position: relative;
+    left: 100px;
+border: 4px solid #111;
+margin-top: 40px;
+padding: 20px;
+height: 300px;
+}
+
+.box {
+    position: fixed;
+    top: 0px;
+   left: 0;
+    /* bottom: 1250px;
+    left: 0px; */
+    /* width: 100%;
+    height: 50px; */
+    /* background-color: lightcoral;
+} */ 
